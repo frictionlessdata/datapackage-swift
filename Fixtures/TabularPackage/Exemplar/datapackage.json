@@ -1,0 +1,189 @@
+{
+    "contributors": [
+        {
+            "email": "first@example.com",
+            "organization": "Self",
+            "path": "http://example.com",
+            "role": "maintainer",
+            "title": "First Last"
+        }
+    ],
+    "created": "1985-04-12T23:20:50Z",
+    "description": "Archive of Tagged Quotations",
+    "homepage": "http://example.com",
+    "id": "58587183-0d93-4728-9b66-d85e19fed966",
+    "image": "http://example.com/logo.png",
+    "keywords": [
+        "quotes",
+        "quotations"
+    ],
+    "licenses": [
+        {
+            "name": "other-pd",
+            "title": "Other (Public Domain)"
+        }
+    ],
+    "name": "quotations",
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "description": "Archive of Quotations",
+            "encoding": "UTF-8",
+            "format": "csv",
+            "licenses": [
+                {
+                    "name": "CC-BY-SA-3.0",
+                    "path": "https://creativecommons.org/licenses/by-sa/3.0/",
+                    "title": "Creative Commons Attribution-ShareAlike 3.0 Unported"
+                }
+            ],
+            "mediatype": "text/csv",
+            "name": "quotation",
+            "path": "quotation.csv",
+            "profile": "tabular-data-resource",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "quote",
+                        "type": "string"
+                    },
+                    {
+                        "name": "author",
+                        "type": "string"
+                    }
+                ],
+                "primaryKey" : [
+                    "id"
+                ]
+            },
+            "sources": [
+                {
+                    "path": "https://en.wikiquote.org/wiki/Voltaire",
+                    "title": "Voltaire - Wikiquote"
+                }
+            ],
+            "title": "Quotation",
+            "dialect" : {
+              "caseSensitiveHeader" : true,
+              "delimiter" : ",",
+              "quoteChar" : "\"",
+              "csvddfVersion" : "1.2",
+              "lineTerminator" : "\r\n",
+              "header" : true,
+              "skipInitialSpace" : false,
+              "doubleQuote" : true
+            }
+        },
+        {
+            "description": "Archive of Tags",
+            "encoding": "UTF-8",
+            "format": "csv",
+            "licenses": [
+                {
+                    "name": "other-pd",
+                    "title": "Other (Public Domain)"
+                }
+            ],
+            "mediatype": "text/csv",
+            "name": "tag",
+            "path": "tag.csv",
+            "profile": "tabular-data-resource",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    }
+                ],
+                "primaryKey": [
+                    "id"
+                ]
+            },
+            "sources": [
+            ],
+            "title": "Tag",
+            "dialect" : {
+              "caseSensitiveHeader" : true,
+              "delimiter" : ",",
+              "quoteChar" : "\"",
+              "csvddfVersion" : "1.2",
+              "lineTerminator" : "\r\n",
+              "header" : true,
+              "skipInitialSpace" : false,
+              "doubleQuote" : true
+            }
+        },
+        {
+            "description": "QuotationTag",
+            "encoding": "UTF-8",
+            "format": "csv",
+            "licenses": [
+                {
+                    "name": "other-pd",
+                    "title": "Other (Public Domain)"
+                }
+            ],
+            "mediatype": "text/csv",
+            "name": "quotationtag",
+            "path": "quotationtag.csv",
+            "profile": "tabular-data-resource",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "tag.id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "quotation.id",
+                        "type": "integer"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "fields": "quotation.id",
+                        "reference": {
+                            "fields": "id",
+                            "resource": "quotation"
+                        }
+                    },
+                    {
+                        "fields": "tag.id",
+                        "reference": {
+                            "fields": "id",
+                            "resource": "tag"
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "tag.id",
+                    "quotation.id"
+                ]
+            },
+            "sources": [
+            ],
+            "title": "Tag",
+            "dialect" : {
+              "caseSensitiveHeader" : true,
+              "delimiter" : ",",
+              "quoteChar" : "\"",
+              "csvddfVersion" : "1.2",
+              "lineTerminator" : "\r\n",
+              "header" : true,
+              "skipInitialSpace" : false,
+              "doubleQuote" : true
+            }
+        }
+    ],
+    "sources": [
+    ],
+    "title": "Quotations",
+    "version": "0.0.0"
+}

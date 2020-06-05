@@ -1,0 +1,65 @@
+{
+    "updated": "2020-01-01T23:59:59Z",
+    "contributors": [
+        {
+            "email": "first@example.com",
+            "organization": "Self",
+            "path": "http://example.com",
+            "role": "maintainer",
+            "title": "First Last"
+        }
+    ],
+    "created": "1985-04-12T23:20:50Z",
+    "description": "Example of a valid data package",
+    "homepage": "http://example.com",
+    "id": "58587183-0d93-4728-9b66-d85e19fed966",
+    "image": "http://example.com/logo.png",
+    "keywords": [
+        "quotes",
+        "voltaire"
+    ],
+    "licenses": [
+        {
+            "name": "mit",
+            "path": "https://opensource.org/licenses/MIT",
+            "title": "MIT License"
+        }
+    ],
+    "name": "quotations",
+    "profile": "data-package",
+    "resources": [
+        {
+            "bytes": 0,
+            "description": "Example data resource",
+            "encoding": "UTF-8",
+            "format": "csv",
+            "hash": "sha1:8843d7f92416211de9ebb963ff4ce28125932878",
+            "licenses": [
+                {
+                    "name": "other-pd",
+                    "title": "Other (Public Domain)"
+                }
+            ],
+            "mediatype": "text/csv",
+            "name": "quotation",
+            "path": "quotation.csv",
+            "profile": "data-resource",
+            "sources": [
+                {
+                    "path": "https://en.wikiquote.org/wiki/Voltaire",
+                    "title": "Voltaire - Wikiquote"
+                }
+            ],
+            "title": "Quotation Archive"
+        }
+    ],
+    "sources": [
+        {
+            "path": "https://en.wikiquote.org/wiki/Voltaire",
+            "title": "Voltaire - Wikiquote",
+            "email": "me@example.com"
+        }
+    ],
+    "title": "Quotations Archive",
+    "version": "0.0.0"
+}

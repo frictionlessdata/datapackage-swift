@@ -1,0 +1,8 @@
+{
+    "resources": [
+        {
+            "data": ["one", "two", "three"],
+            "name": "Numbers"
+        }
+    ]
+}
