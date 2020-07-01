@@ -1,6 +1,6 @@
 os: osx
 language: swift
-osx_image: xcode11.3
+osx_image: xcode11.4
 env:
   - PACKAGE_NAME=datapackage-swift
 before_install:
