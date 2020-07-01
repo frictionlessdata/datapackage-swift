@@ -1,0 +1,12 @@
+os: osx
+language: swift
+osx_image: xcode11.3
+env:
+  - PACKAGE_NAME=datapackage-swift
+before_install:
+  - sudo gem install coveralls-lcov
+script:
+  - swift test --enable-code-coverage
+  - xcrun llvm-cov export -format=lcov -ignore-filename-regex="Tests" -instr-profile .build/debug/codecov/default.profdata .build/debug/${PACKAGE_NAME}PackageTests.xctest/Contents/MacOS/${PACKAGE_NAME}PackageTests > coverage.info
+after_success:
+  - coveralls-lcov coverage.info

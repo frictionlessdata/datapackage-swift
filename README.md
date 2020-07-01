@@ -1,4 +1,7 @@
 # datapackage-swift
+[![TravisCI Build Status](https://travis-ci.org/frictionlessdata/datapackage-swift.svg?branch=master)](https://travis-ci.org/frictionlessdata/datapackage-swift)
+[![Coveralls Coverage Status](https://coveralls.io/repos/github/frictionlessdata/datapackage-swift/badge.svg?branch=master)](https://coveralls.io/github/frictionlessdata/datapackage-swift?branch=master)
+
 A *draft* Swift library for working with [Data Packages](https://frictionlessdata.io/specs/data-package/). It also includes a profile for [Tabular Data Package](https://specs.frictionlessdata.io/tabular-data-package/) in conjunction with the corresponding [Table Schema](https://github.com/frictionlessdata/tableschema-swift) library.
 
 ## Requirements
