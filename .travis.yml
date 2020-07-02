@@ -7,6 +7,6 @@ before_install:
   - sudo gem install coveralls-lcov
 script:
   - swift test --enable-code-coverage
-  - xcrun llvm-cov export -format=lcov -ignore-filename-regex="Tests|.build" -instr-profile .build/debug/codecov/default.profdata .build/debug/${PACKAGE_NAME}PackageTests.xctest/Contents/MacOS/${PACKAGE_NAME}PackageTests > coverage.info
+  - xcrun llvm-cov export -format=lcov -ignore-filename-regex="Tests" -ignore-filename-regex=".build" -instr-profile .build/debug/codecov/default.profdata .build/debug/${PACKAGE_NAME}PackageTests.xctest/Contents/MacOS/${PACKAGE_NAME}PackageTests > coverage.info
 after_success:
   - coveralls-lcov coverage.info
