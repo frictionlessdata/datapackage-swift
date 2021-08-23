@@ -1,11 +1,11 @@
 # datapackage-swift
 
-[![Build](https://travis-ci.org/frictionlessdata/datapackage-swift.svg?branch=master)](https://travis-ci.org/frictionlessdata/datapackage-swift)
-[![Coverage](https://coveralls.io/repos/github/frictionlessdata/datapackage-swift/badge.svg?branch=master)](https://coveralls.io/github/frictionlessdata/datapackage-swift?branch=master)
+[![Build](https://travis-ci.org/frictionlessdata/datapackage-swift.svg?branch=main)](https://travis-ci.org/frictionlessdata/datapackage-swift)
+[![Coverage](https://coveralls.io/repos/github/frictionlessdata/datapackage-swift/badge.svg?branch=main)](https://coveralls.io/github/frictionlessdata/datapackage-swift?branch=main)
 [![Codebase](https://img.shields.io/badge/codebase-github-brightgreen)](https://github.com/frictionlessdata/datapackage-swift)
 [![Support](https://img.shields.io/badge/support-discord-brightgreen)](https://discordapp.com/invite/Sewv6av)
 
-A *draft* Swift library for working with [Data Packages](https://frictionlessdata.io/specs/data-package/). It also includes a profile for [Tabular Data Package](https://specs.frictionlessdata.io/tabular-data-package/) in conjunction with the corresponding [Table Schema](https://github.com/frictionlessdata/tableschema-swift) library.
+A Swift library for working with [Data Packages](https://frictionlessdata.io/specs/data-package/). It also includes a profile for [Tabular Data Package](https://specs.frictionlessdata.io/tabular-data-package/) in conjunction with the corresponding [Table Schema](https://github.com/frictionlessdata/tableschema-swift) library.
 
 ## Requirements
  * Source compatibility with Swift 4.2
@@ -33,7 +33,7 @@ A *draft* Swift library for working with [Data Packages](https://frictionlessdat
 | Additional/Custom Properties            | Available                    |
 | Extension through Profiles              | Available                    |
 
-This is a *draft* implementation of Data Package and Tabular Data Package. It initially implemented a subset of features for use to serialize (and deserialize) a database into a human-usable format. It has since been expanded for more general use. Although this implementation provides access to all attributes in the spec, it has deprioritized some features, notably anything involving networking and schema verification.
+This is an idiomatic Swift implementation of Data Package and Tabular Data Package. It initially implemented a subset of features for use to serialize (and deserialize) a database into a human-usable format. It has since been expanded for more general use. Although this implementation provides access to all attributes in the spec, some features have been deprioritized, notably anything involving networking and schema verification.
 
 The general strategy is to implement features only as needed.
 
