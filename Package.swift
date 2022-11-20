@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "datapackage-swift",
     products: [
-        .library(name: "DataPackage", type: .static, targets: ["DataPackage"]),
+        .library(name: "DataPackage", targets: ["DataPackage"]),
         .executable(name: "datapackage-swift", targets: ["DataPackageCLI"])
     ],
     dependencies: [
