@@ -10,7 +10,7 @@ let package = Package(
         .executable(name: "datapackage-swift", targets: ["DataPackageCLI"])
     ],
     dependencies: [
-        .package(url: "https://github.com/frictionlessdata/tableschema-swift.git", .upToNextMinor(from: "0.9.0"))
+        .package(url: "https://github.com/frictionlessdata/tableschema-swift.git", .upToNextMinor(from: "1.0.0"))
     ],
     targets: [
         .target(name: "DataPackage", dependencies: ["TableSchema"], path: "Sources/DataPackage"),
