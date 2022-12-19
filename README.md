@@ -16,6 +16,9 @@ A Swift library for working with [Data Packages](https://frictionlessdata.io/spe
  * Apple's `Foundation` framework is the only dependency
 
 ## Implementation Status
+This library supports the following features and profiles. There is a testing suite to keep what should be working in check. Contributions are welcome.
+
+Note that the implementation of Table Schema for the Tabular Data Package Profile is incomplete. Field types that are unsupported will not be transformed resulting in potential data loss on those unsupported types.
 
 ### High-Level Status
 
@@ -90,7 +93,6 @@ The general strategy is to implement features only as needed.
 | Feature     | Status                                   |
 |:------------|:-----------------------------------------|
 | CSV Support | Available, requires external CSV library |
-|             |                                          |
 
 #### Tabular Data Resource Profile Status
 
