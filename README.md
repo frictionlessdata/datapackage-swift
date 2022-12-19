@@ -1,6 +1,6 @@
 # datapackage-swift
 
-[![Build](https://travis-ci.org/frictionlessdata/datapackage-swift.svg?branch=main)](https://travis-ci.org/frictionlessdata/datapackage-swift)
+[![Build](https://github.com/frictionlessdata/datapackage-swift/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/frictionlessdata/datapackage-swift/actions/workflows/tests.yml)
 [![Coverage](https://coveralls.io/repos/github/frictionlessdata/datapackage-swift/badge.svg?branch=main)](https://coveralls.io/github/frictionlessdata/datapackage-swift?branch=main)
 [![Codebase](https://img.shields.io/badge/codebase-github-brightgreen)](https://github.com/frictionlessdata/datapackage-swift)
 [![Support](https://img.shields.io/badge/support-discord-brightgreen)](https://discordapp.com/invite/Sewv6av)
